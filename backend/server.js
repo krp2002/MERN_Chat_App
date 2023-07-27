@@ -50,7 +50,7 @@ const server = app.listen(PORT, console.log(`server listen on port ${PORT}`.yell
 const io = require('socket.io')(server, {
     pingTimeout: 60000,
     cors: {
-        origin: '*',
+        origin: "http://localhost:5000",
     }
 })
 
